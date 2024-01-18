@@ -1,0 +1,15 @@
+.templateTexto{
+    color:#00A2E3;
+  }
+  .templatefundoMenu{
+    background-color: rgba(255, 255, 255, 0.57);
+  }
+  .templatefundo{
+    background-color: #00A2E3;
+  }
+  .menuIMG_fundo{
+    background-image: url('../public/big-img-top.png');
+    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+  }
+  /*  */
