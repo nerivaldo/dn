@@ -2,10 +2,20 @@ import React from 'react'
 import Login from '../Login'
 import Image from 'next/image';
 
+import Star from '../Star';
+
 import img1 from '../../public/agt.jpg'
+import img2 from '../../public/bai.jpeg'
+import img3 from '../../public/sonangol.png'
+import img4 from '../../public/unitel.png'
+import img5 from '../../public/yango.png'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope,faMessage } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function Corpo() {
-  const img1="/public/agt.jpg";
+  // const img1="/public/agt.jpg";
   return (
     <div >
       <div className='flex flex-row w-full h-96 bg-slate-50'>
@@ -17,29 +27,69 @@ export default function Corpo() {
                 <p className='mt-6'>EM DESTAQUE</p>
             </div>
             <div className='h-20 p-2 mr-6 text-sm bg-white cursor-pointer bordasButton w-36'>
-                <p className='mt-6'>EM DESTAQUE</p>
+                <p className='mt-6'>NOVAS</p>
             </div>
-
             
-           
-            <div >
-              <p className='mb-7'>MELHORES CLASSIFICADOS</p>
-
+            <div>
+              <p className='mb-5'>MELHORES CLASSIFICADOS</p>
               <div className='flex flex-grow'>
                 <div className='mr-6 bg-white h-28 w-28'>
-                <Image
-                  src={img1} // Caminho relativo à pasta 'public'
-                  alt="Descrição da imagem"
-                  width={500}
-                  height={300}
-                />
+                  <div className='h-28 w-28'>                    
+                    <Image
+                      src={img2} // Caminho relativo à pasta 'public'
+                      alt="Descrição da imagem"
+                      width={112}
+                      height={112}
+                    />
+                  </div>
+                 
+                  <div className=' mt-2 h-5 '>
+                    <h1 className='text-xs font-bold'>BAI</h1>
+                    <Star/>
+                  </div>
                 </div>
                 <div className='mr-6 bg-white h-28 w-28 '>
+                <div className='h-28 w-28'>  
+                  <Image
+                    src={img3} // Caminho relativo à pasta 'public'
+                    alt="Descrição da imagem"
+                    width={112}
+                    height={112}
+                  />
+                  </div>
+                  <div className=' mt-2 h-5 '>
+                      <h1 className='text-xs font-bold'>SONANGOL</h1>
+                      <Star/>
+                  </div>
                 </div>
                 <div className='mr-6 bg-white h-28 w-28 '>
+                <div className='h-28 w-28'>  
+                  <Image
+                    src={img4} // Caminho relativo à pasta 'public'
+                    alt="Descrição da imagem"
+                    width={112}
+                    height={112}
+                  />
+                  </div>
+                  <div className=' mt-2 h-5 '>
+                      <h1 className='text-xs font-bold'>UNITEL</h1>
+                      <Star/>
+                  </div>
                 </div>
                 <div className='mr-6 bg-white h-28 w-28 '>
-                 </div>
+                <div className='h-28 w-28'>  
+                  <Image
+                    src={img5} // Caminho relativo à pasta 'public'
+                    alt="Descrição da imagem"
+                    width={112}
+                    height={112}
+                  />
+                  </div>
+                  <div className=' mt-2 h-5 '>
+                      <h1 className='text-xs font-bold'>YANGO</h1>
+                      <Star/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -75,24 +125,30 @@ export default function Corpo() {
       <div className='h-screen p-6 font-bold'>
         <h4>RANKING DAS EMPRESAS</h4>
         <div className='flex flex-wrap'>
-          <div className='mr-6 mt-6 bg-slate-400 h-36 w-36 rounded-lg '>
+          <div className='mr-6 mt-6 p-6 bg-slate-100 h-35 w-96 rounded-lg '>
+            <div className='  flex flex-row'> 
+              <div>              
+                    <Image
+                      src={img2} // Caminho relativo à pasta 'public'
+                      alt="Descrição da imagem"
+                      width={112}
+                      height={112}
+                    />
+              </div>   
+              <div className=' ml-6 mt-2 h-5 '>
+                  <h1 className='text-xs font-bold'>BAI</h1>
+                  <Star/>
+                  
+                  <div>
+                    <FontAwesomeIcon icon={faMessage} />
+                    
+                    {/* size pode ser ajustado conforme necessário */}
+                  </div>
+              </div>
+                              
+            </div>                  
           </div>
-          <div className='mt-6 mr-6 bg-slate-400 h-36 w-36 rounded-lg '>
-          </div>
-          <div className='mt-6 mr-6 bg-slate-400 h-36 w-36 rounded-lg '>
-          </div>
-          <div className='mt-6 mr-6 bg-slate-400 h-36 w-36 rounded-lg '>
-          </div>
-          <div className='mt-6 mr-6 bg-slate-400 h-36 w-36 rounded-lg '>
-          </div>
-          <div className='mt-6 mr-6 bg-slate-400 h-36 w-36 rounded-lg '>
-          </div>
-          <div className='mt-6 mr-6 bg-slate-400 h-36 w-36 rounded-lg '>
-          </div>
-          <div className='mt-6 mr-6 bg-slate-400 h-36 w-36 rounded-lg '>
-          </div>
-          <div className='mt-6 mr-6 bg-slate-400 h-36 w-36 rounded-lg '>
-          </div>
+          
  
         </div>
       </div>
