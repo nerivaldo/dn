@@ -11,7 +11,7 @@ import img4 from '../../public/unitel.png'
 import img5 from '../../public/yango.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope,faMessage } from '@fortawesome/free-solid-svg-icons';
+import { faDuotone,faMessage } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Corpo() {
