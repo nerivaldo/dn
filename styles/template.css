@@ -69,4 +69,19 @@
     color: #4c4b4b;
   }
 
-  /* ----------------*/
+  /* ------BARRA DE ROLAGEM DA PESQUISA DO CORPO----------*/
+
+  /* No seu arquivo styles.css */
+.scrollbar::-webkit-scrollbar {
+  width: 5px; /* Largura da barra de rolagem */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #00A2E3;  /* Cor do botão da barra de rolagem */
+  border-radius: 1px; /* Raio das bordas do botão da barra de rolagem */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #b4b4b4; /* Cor do fundo da barra de rolagem */
+}
+
