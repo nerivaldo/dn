@@ -5,11 +5,11 @@ const Navbar = () => {
   return (
     <div className='h-96 menuIMG_fundo ' >
       <div className='flex items-center justify-center h-12 templatefundoMenu opacity-60 '>
-       <div className='w-10 p-1 rounded-tl-lg rounded-br  bg-slate-600 templatefundo' >
+       <div className='w-10 p-1 rounded-tl-lg rounded-br bg-slate-600 templatefundo' >
           <p className='text-2xl font-bold text-white '>Dn</p>
         </div>
 
-          <div className='w-9/12 font-semibold text-center  templateLink3'>
+          <div className='w-9/12 font-semibold text-center templateLink3'>
               <a href='#' className='p-3 hover:text-white'>CATEGORIA</a>
               <a href='#' className='p-3 hover:text-white'>RANKING</a>
               <a href='#' className='p-3 hover:text-white'>COMPARE</a>

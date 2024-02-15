@@ -45,22 +45,25 @@ export default function Corpo() {
   return (
     <div >
       <div className='flex flex-row w-full h-96 bg-slate-50'>
-          <div className="container flex flex-wrap justify-center p-6 text-center">
-            <div className='h-20 p-2 mr-6 text-sm bg-white cursor-pointer bordasButton w-36'>
-                <p >FAZER UMA RECLAMAÇÃO AGORA</p>
-            </div>
-            <div className='h-20 p-2 mr-6 text-sm bg-white cursor-pointer bordasButton w-36'>
-                <p className='mt-6'>EM DESTAQUE</p>
-            </div>
-            <div className='h-20 p-2 mr-6 text-sm bg-white cursor-pointer bordasButton w-36'>
-                <p className='mt-6'>NOVAS</p>
-            </div>
+          <div className="container flex flex-col items-center p-6 text-center">
             
+            <div className='flex flex-row mb-10 '>
+              <div className='h-20 p-2 mr-6 text-sm cursor-pointer bordasButton w-36'>
+                    <p >FAZER UMA RECLAMAÇÃO AGORA</p>
+                </div>
+                <div className='h-20 p-2 mr-6 text-sm bg-white cursor-pointer bordasButton w-36'>
+                    <p className='mt-6'>EM DESTAQUE</p>
+                </div>
+                <div className='h-20 p-2 mr-6 text-sm bg-white cursor-pointer bordasButton w-36'>
+                    <p className='mt-6'>NOVAS</p>
+              </div>
+            </div>
+                          
             <div>
               <p className='mb-5'>MELHORES CLASSIFICADOS</p>
               <div className='flex flex-grow'>
                 <div className='mr-6 bg-white h-28 w-28'>
-                  <div className='h-28 w-28'>                    
+                  <div className='h-28 w-28'>
                     <Image
                       src={img2} // Caminho relativo à pasta 'public'
                       alt="Descrição da imagem"
@@ -120,14 +123,16 @@ export default function Corpo() {
             </div>
           </div>
 
-          <div className='container text-start'>
+          <div className='container w-full'>
+            <div className='xl:w-2/4 md:block sm:hidden'>
               <Login/>
+            </div>
           </div>
 
       </div>
 
       <div className='flex flex-row-reverse w-full menuIMG_fundo2 h-72 bg-slate-500'>
-        <div className='container w-2/4 h-full p-10 templatefundoOpacity'>
+        <div className='container w-2/4 h-full p-10 templatefundoOpacity sm:hidden md:block'>
           <div className="mb-4">
               <label htmlFor="password" className="block text-sm font-medium text-white text-gray-700">PESQUISAR ENPRESA:</label>
               <input
@@ -210,7 +215,7 @@ export default function Corpo() {
               </div>
           </div>
         </div>
-        <div className='flex flex-col items-center justify-center w-3/5 p-6 font-extrabold text-center text-white '>
+        <div className='flex flex-col w-3/5 p-6 font-extrabold text-center text-white sm:justify-center sm:items-center '>
           <h1 className='text-5xl '>
             CADASTRE EMPRESA
           </h1>
