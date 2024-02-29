@@ -55,20 +55,33 @@
     color: #00A2E3;
   }
 
+  .templateHover3 {
+    background-color: white;
+    color: #00A2E3;
+  }
+
+
+  
   .templateHover1:hover {
-    background-color:white ;
+    background-color: white ;
     color: #00A2E3;
   }
   .templateHover2:hover {
     background-color: #00A2E3;
     color: white;
   }
+  .templateHover3:hover {
+    background-color: #f5f5f5;
+    border: none;
+  }
 
   /* BORDAS -HOME */
 
   .bordasButton{
     border-bottom: 5px solid #00A2E3;
-    color: #4c4b4b;
+  }
+  .bordasTotal{
+    border: 1px solid #00A2E3;
   }
 
   /* ------BARRA DE ROLAGEM DA PESQUISA DO CORPO----------*/
@@ -84,9 +97,26 @@
 }
 
 .scrollbar::-webkit-scrollbar-track {
-  background-color: #b4b4b4; /* Cor do fundo da barra de rolagem */
+  background-color: #f1f1f1; /* Cor do fundo da barra de rolagem */
 }
 
+ /* ------BARRA DE ROLAGEM DA PESQUISA DO CORPO----------*/
+
+  /* No seu arquivo styles.css */
+  .scrollbar2::-webkit-scrollbar {
+    width: 3px; /* Largura da barra de rolagem */
+  }
+  
+  .scrollbar2::-webkit-scrollbar-thumb {
+    background-color: #f0f0f0;  /* Cor do botão da barra de rolagem */
+    border-radius: 1px; /* Raio das bordas do botão da barra de rolagem */
+  }
+  
+  .scrollbar2::-webkit-scrollbar-track {
+    background-color: #ffffff; /* Cor do fundo da barra de rolagem */
+  }
+  
+  
 
 
 

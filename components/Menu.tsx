@@ -16,7 +16,7 @@ const Navbar = () => {
           </div>
 
           <div>
-            <button className='p-2 mr-3 rounded-lg templateHover2'>Reclamar</button>
+          <Link href={`/cadastrar/pessoa`} className='p-2 mr-3 rounded-lg templateHover2'>Cadastrar</Link>
             <button className='p-2 rounded-lg templateHover1'>Entrar</button>
           </div>
 

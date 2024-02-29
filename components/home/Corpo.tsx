@@ -13,6 +13,7 @@ import img5 from '../../public/yango.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDuotone,faMessage } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
+import CategoriesList from '../Categoria_empresa';
 
 
 
@@ -91,10 +92,25 @@ export default function Corpo() {
                       <Star/>
                   </div>
                 </div>
+               
                 <div className='mr-6 bg-white h-28 w-28 '>
                 <div className='h-28 w-28'>  
                   <Image
-                    src={img4} // Caminho relativo à pasta 'public'
+                    src={img5} // Caminho relativo à pasta 'public'
+                    alt="Descrição da imagem"
+                    width={112}
+                    height={112}
+                  />
+                  </div>
+                  <div className='h-5 mt-2 '>
+                      <h1 className='text-xs font-bold'>UNITEL</h1>
+                      <Star/>
+                  </div>
+                </div>
+                <div className='mr-6 bg-white h-28 w-28 '>
+                <div className='h-28 w-28'>  
+                  <Image
+                    src={img3} // Caminho relativo à pasta 'public'
                     alt="Descrição da imagem"
                     width={112}
                     height={112}
@@ -123,8 +139,8 @@ export default function Corpo() {
             </div>
           </div>
 
-          <div className='container w-full'>
-            <div className='xl:w-2/4 md:block sm:hidden'>
+          <div className='container hidden w-full xl:block'>
+            <div className=' xl:w-2/4'>
               <Login/>
             </div>
           </div>
@@ -226,15 +242,27 @@ export default function Corpo() {
         </div>
       </div>
 
-      <div>
-        <div className='flex flex-row mt-6 bg-slate-200'>
-          <div className='flex-1 w-1/2 p-4 text-center hover:bg-slate-300'>MELHORES EMPRESAS</div>
-          <div className='flex-1 w-1/2 p-4 text-center rounded-l-full templateHover1 templatefundo'>PIORES EMPRESAS</div>
-        </div>
+      <div className='px-4 xl:px-32'>
+        
       
-        <div className='flex flex-wrap justify-center'>
-         
-            {empresas.map(empresa=>(           
+        <div className='flex flex-row'>
+          <div className='hidden md:block m-7 bg-slate-50 h-96'>
+              <h3 className='p-4 font-bold rounded-md text-slate-500'>Categorias</h3>
+            <div className='w-full h-full overflow-y-scroll min-w-80 scrollbar2'>
+              <CategoriesList/>
+            </div>
+         </div>
+
+
+         <div className=''>
+          <div className='flex flex-row mt-6 bg-slate-50 '>
+            <div className='flex-1 w-1/2 p-4 text-center hover:bg-slate-100 bg-slate-50'>MELHORES EMPRESAS</div>
+            <div className='flex-1 w-1/2 p-4 text-center rounded-l-full templateHover1 templatefundo'>PIORES EMPRESAS</div>
+          </div>
+
+          <div  className='flex flex-wrap justify-center'>
+
+         {empresas.map(empresa=>(           
               <Link key={empresa.id} href='#'>
                 <div  className='p-6 mt-6 mr-6 rounded-lg hover:bg-slate-100 bg-slate-50 h-35 w-96 '>
                 
@@ -263,13 +291,17 @@ export default function Corpo() {
                     </div>
                 </div>
               </Link>
-             ))}                  
+             ))}      
+          </div>
+         </div>
+                        
 
+        
+        </div>
         </div>
         
         {/* FOOTER */}
         <div className='h-32 mt-10 bg-slate-600'>
-        </div>
       </div>
     </div>
   )
